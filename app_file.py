@@ -46,6 +46,7 @@ def update_todo(id):
         return redirect(url_for('index'))
     
 
+
 @app.route('/<id>/complete/', methods=['POST'])
 def mark_completed(id):
     todos[id].update({'completed':True})
